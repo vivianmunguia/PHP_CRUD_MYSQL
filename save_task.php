@@ -10,6 +10,9 @@ if (isset($_POST['save_task'])) {
         die("Query failed");
     }
     
+    $_SESSION['message'] = 'Task Saved successfully';
+    $_SESSION['message_type'] = 'success';
+
     header("Location: index.php");
 }
 ?>

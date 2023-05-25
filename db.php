@@ -1,4 +1,7 @@
 <?php
+
+session_start();
+
 $conn = mysqli_connect( //Se utiliza la libreria mysqli y luego el metodo connect
     'localhost', //Donde esta el servidor de la base de de datos
     'root', //Usuario
